@@ -1,0 +1,19 @@
+apikey
+
+omdb = e67b678d
+youtube = AIzaSyB0t9VChkwZ7PLCc386VoN7y5jl12DUOtU
+
+
+html.json.code-snippets
+
+
+{
+	"PHP Tag": {
+		"prefix": "php",
+		"body": "<?php $1 ?>"
+	},
+	"Inline Echo": {
+		"prefix": "phpp",
+		"body": "<?= $$1; ?>"
+	}
+}
