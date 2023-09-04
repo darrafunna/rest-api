@@ -1,0 +1,28 @@
+[
+    {
+        "nama" : "Darra Funna",
+        "nim" : 105219004,
+        "lulus" : true,
+        "hobi" : [
+            "menyanyi",
+            "melukis"
+        ],
+        "pembimbing" : {
+            "pembimbing1" : "Erwin Setiawan",
+            "pembimbing2" : "Randi Farmana Putra"
+        }
+    },
+    {
+        "nama" : "Rafly Ramadhan",
+        "nim" : 105219029,
+        "lulus" : true,
+        "hobi" : [
+            "gaming",
+            "coffee loverr"
+        ],
+        "pembimbing" : {
+            "pembimbing1" : "M. Zaki Almuzakki",
+            "pembimbing2" : "Erwin Setiawan"
+        }
+    }
+]

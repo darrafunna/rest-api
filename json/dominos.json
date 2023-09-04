@@ -1,0 +1,39 @@
+[
+    {
+        "name" : "Philly Cheese Steak",
+        "toppings" : "Provolone Cheese Sauce, Cheddar Cheese Sauce, Creamy Cheese Sauce, Tomato Sauce, Beef Steak, Onions, Green Pepper, Champignon Mushroom, Mozzarella Cheese, Parsley, Parmesan Cheese Cup",
+        "size" : ["Large", "Medium", "Personal"],
+        "price" : 85000
+    },
+    {
+        "name" : "American Pie Super Meaty Bolognese",
+        "toppings" : "Sauce Rustic, Creamy Liquid Cheese Sauce, Meatball, Beef Crumble, Bawang, Sauce Tomat, Keju Mozzarella, Paprika Hijau, Tomat, Parsley",
+        "size" : ["Medium"],
+        "price" : 100000
+    },
+    {
+        "name" : "American Pie Supreme Cheesy",
+        "toppings" : "Keju Mozzarella, Cheese Sauce, Jagung Sosis Sapi, Macaroni, Beef Crumble, Keju Mozzarella, Parsley",
+        "size" : ["Medium"],
+        "price" : 85000
+    },
+    {
+        "name" : "Extravaganzza",
+        "toppings" : "Domino's Pizza Sauce, Green Pepper, Onion, Black Olives, Mushroom, Beef Pepperoni, Beef Crumble, Mozzarella Cheese",
+        "size" : ["Large", "Medium", "Personal"],
+        "price" : 85000
+    },
+    {
+        "name" : "Chicken Delight",
+        "toppings" : "Domino's Pizza Sauce, Onion, Tomato, Chili Chicken, Parsley, Mozzarella Cheese",
+        "size" : ["Large", "Medium", "Personal"],
+        "price" : 100000
+    },
+    {
+        "name" : "American Frankie Sausage",
+        "toppings" : "Rustic Sauce, Mustard, Mozzarella Cheese, Meaty Frankfurter Beef Sausage, Beef Rasher, Beef Crumble, Onion, Green Pepper, Tomato, Mayonnaise, Parsley",
+        "size" : ["Large", "Medium", "Personal"],
+        "price" : 85000
+    }
+
+]
