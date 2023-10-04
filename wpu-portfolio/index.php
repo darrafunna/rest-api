@@ -1,5 +1,26 @@
-<?php
+<?php 
 
+function get_CURL($url){
+  $curl = curl_init();
+  curl_setopt($curl, CURLOPT_URL, $url);
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+  $result = curl_exec($curl);
+  curl_close($curl);
+  return json_decode($result, true);
+}
+
+$result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UC40EugkMaahx3X4n-7za5Jg&key=AIzaSyB0t9VChkwZ7PLCc386VoN7y5jl12DUOtU');
+
+
+$youtubeProfilePic = $result['items'][0]['snippet']['thumbnails']['medium']['url'];
+$channelName = $result['items'][0]['snippet']['title'];
+$subsCount = $result['items'][0]['statistics']['subscriberCount'];
+
+//latest video
+$urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyB0t9VChkwZ7PLCc386VoN7y5jl12DUOtU&channelId=UC40EugkMaahx3X4n-7za5Jg&maxResults=1&order=date';
+$result = get_CURL($urlLatestVideo);
+
+$latestVideoId = $result['items'][0]['id']['videoId'];
 
 ?>
 
@@ -91,17 +112,18 @@
         <div class="col-md-5">
           <div class="row">
             <div class="col-md-4">
-              <img src="img/profile2.png" width="200" class="rounded-circle img-thumbnail">
+              <img src="<?= $youtubeProfilePic; ?>" width="200" class="rounded-circle img-thumbnail">
             </div>
             <div class="col-md-8">
-              <h5>Darra Funna</h5>
-              <p>100 Subscribers</p>
+              <h5><?= $channelName; ?></h5>
+              <p><?= $subsCount; ?> Subscribers</p>
+              <div class="g-ytsubscribe" data-channelid="UC40EugkMaahx3X4n-7za5Jg" data-layout="default" data-count="default"></div>
             </div>
           </div>
           <div class="row mt-3 pb-3">
             <div class="col">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Qx3rKd8yJ3M?rel=0" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?= $latestVideoId; ?>?rel=0" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -287,6 +309,7 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
   </script>
+  <script src="https://apis.google.com/js/platform.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,4 @@
+apikey
+
+omdb = e67b678d
+youtube = AIzaSyB0t9VChkwZ7PLCc386VoN7y5jl12DUOtU
